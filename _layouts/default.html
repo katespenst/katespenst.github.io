@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  
+  <body>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a class="brand-logo black-text">Kate</a>
+        <!-- TODO: Mobile nav -->
+      </div>
+    </nav>
+      <header>
+        <div class="parallax-container">
+          <div class="section no-pad-bot"> 
+            <div class="container">
+              <h1 class="header center">Hi Kate!</h1>
+            </div>
+          </div>
+          <div class="parallax" ><img alt="Unsplashed background" src="assets/img/mountain.jpg"/></div>
+        </div>
+
+      </header>
+      <main>
+        <section class="container">
+            <!--TODO: Should show most recent one or two posts -->
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate feugiat diam, tempor fermentum quam suscipit eget. Nulla vitae magna auctor, sodales nisl id, vehicula ipsum. Cras ultricies cursus leo, vitae aliquet nulla pellentesque ac. Quisque finibus vel magna vitae iaculis. Duis sed interdum erat. Nulla facilisi. Vestibulum nec scelerisque quam, eget interdum massa. Cras at rutrum dolor. Aliquam interdum leo non arcu ullamcorper commodo. Donec egestas bibendum maximus. Donec pellentesque aliquet orci, a feugiat leo placerat vitae.
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <footer class="page-footer brown darken-1 white-text">
+        <!-- blurb about kate and links -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Test</h5>
+                    <p>This is a short blurb about life</p>
+                </div>
+                <div class="col s12 l3">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li>Please don't actually contact me</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="footer-copyright brown darken-2 white-text">
+            <div class="container">
+                <a class="grey-text text-lighten-4 right" href="#!">Blaine Lewis</a>
+            </div>
+        </div>-->
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+
+  {% if site.google_analytics %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+  {% endif %}
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <!-- TODO: better javascript -->
+  <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    </script>
+  </body>
+</html>
