@@ -1,0 +1,41 @@
+<footer class="page-footer grey darken-4 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="about col s12 l6">
+                <h5>About Me</h5>
+                <p>Kate Spenst is an adventurer and an e-commerce expert. She spends her weekends in coffee shops or on the
+                    tops of mountains. This is her place to write and express her creativity. She also uses her Instagram
+                    and Pinterest as an outlet for creativity so you should check those out!</p>
+            </div>
+            <div class="col s12 l3">
+                <div class="social-container">
+                    <a class="social" href="https://www.instagram.com/kate.spenst/"><img src="{{ site.url }}/assets/img/instagram.png"/></a>
+                    <a class="social" href="https://www.pinterest.com/katespenst/"><img src="{{site.url}}/assets/img/pinterest.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright black">
+        <div class="container">
+            <a class="grey-text text-lighten-4 right" href="#!">© 2017 Kate Spenst</a>
+        </div>
+    </div>
+</footer>
+
+{% if site.google_analytics %}
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+</script>
+{% endif %}

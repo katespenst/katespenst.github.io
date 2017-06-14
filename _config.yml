@@ -1,0 +1,7 @@
+title: Kate Spenst
+permalink: none
+excerpt_separator: <!--more-->
+
+sass:
+    sass_dir: _assets/css
+    style: compressed
